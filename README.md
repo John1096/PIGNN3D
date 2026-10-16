@@ -1,11 +1,11 @@
-# TiGNN 3D
+# PIGNN3D
 
 Research code for a thermodynamics-informed graph neural network. The model
 encodes node and edge features, performs graph message passing, and predicts
 the energy and entropy gradients plus GENERIC operators used to advance the
 state.
 
-This repository is a cleaned-up version of the `tignn3d_tmp_grad` source.
+This repository is a cleaned-up version of the supplied experimental source.
 The training equations, dataset splits, and visualization outputs remain
 recognizable. The CSV converter now accepts an input path and writes its
 two global case features correctly.

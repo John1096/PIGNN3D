@@ -140,7 +140,7 @@ def plot_3D(z_net, z_gt, data_list, output_dir, var=6):
     fig = plt.figure(figsize=(10, 8))
     ax1 = fig.add_subplot(1, 2, 1, projection='3d')
     ax2 = fig.add_subplot(1, 2, 2, projection='3d')
-    ax1.set_title('Thermodynamics-informed GNN'), ax1.grid()
+    ax1.set_title('PIGNN3D'), ax1.grid()
     ax1.set_xlabel('X'), ax1.set_ylabel('Y'), ax1.set_zlabel('Z')
     ax2.set_title('Ground Truth'), ax2.grid()
     ax2.set_xlabel('X'), ax2.set_ylabel('Y'), ax2.set_zlabel('Z')
@@ -174,7 +174,7 @@ def plot_3D(z_net, z_gt, data_list, output_dir, var=6):
     def animate(snap):
         ax1.cla()
         ax2.cla()
-        ax1.set_title('Thermodynamics-informed GNN'), ax1.grid()
+        ax1.set_title('PIGNN3D'), ax1.grid()
         ax1.set_xlabel('X'), ax1.set_ylabel('Y'), ax1.set_zlabel('Z')
         ax2.set_title('Ground Truth'), ax2.grid()
         ax2.set_xlabel('X'), ax2.set_ylabel('Y'), ax2.set_zlabel('Z')
@@ -210,7 +210,7 @@ def plot_2D(z_net, z_gt, data_list, output_dir, var=0):
     fig = plt.figure()
     ax1 = fig.add_subplot(2, 1, 1)
     ax2 = fig.add_subplot(2, 1, 2)
-    ax1.set_title('Thermodynamics-informed GNN'), ax1.grid()
+    ax1.set_title('PIGNN3D'), ax1.grid()
     ax1.set_xlabel('X'), ax1.set_ylabel('Y')
     ax2.set_title('Ground Truth'), ax2.grid()
     ax2.set_xlabel('X'), ax2.set_ylabel('Y')
@@ -253,7 +253,7 @@ def plot_2D(z_net, z_gt, data_list, output_dir, var=0):
     def animate(snap):
         ax1.cla()
         ax2.cla()
-        ax1.set_title('Thermodynamics-informed GNN'), ax1.grid()
+        ax1.set_title('PIGNN3D'), ax1.grid()
         ax1.set_xlabel('X'), ax1.set_ylabel('Y')
         ax2.set_title('Ground Truth'), ax2.grid()
         ax2.set_xlabel('X'), ax2.set_ylabel('Y')
@@ -314,7 +314,7 @@ def plot_3DT(z_net, z_gt, data_list, output_dir, var=0):
         ax1.cla()
         ax2.cla()
 
-        ax1.set_title('Thermodynamics-informed GNN')
+        ax1.set_title('PIGNN3D')
         ax2.set_title('Ground Truth')
 
         ax1.set_xlabel('X'), ax1.set_ylabel('Y'), ax1.set_zlabel('Z')

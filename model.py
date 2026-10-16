@@ -85,7 +85,7 @@ class MetaLayer(nn.Module):
         return nodes, edge_features
 
 
-class TIGNN(nn.Module):
+class PIGNN3D(nn.Module):
     """Encode a graph, pass messages, and decode thermodynamic quantities."""
 
     def __init__(self, args, dims):

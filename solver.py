@@ -7,7 +7,7 @@ from torch_geometric.loader import DataLoader
 from tqdm import tqdm
 
 from dataset import load_dataset
-from model import TIGNN
+from model import PIGNN3D
 from utilities.plot import plot_2D, plot_3D, save_simulation_to_vtk
 from utilities.utils import print_error, save_log
 
@@ -35,7 +35,7 @@ class Solver:
         self.output_dir = Path(args.output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
-        self.net = TIGNN(args, self.dims).to(self.device)
+        self.net = PIGNN3D(args, self.dims).to(self.device)
         if not args.train:
             checkpoint = Path(args.dset_dir) / f"params_{self.sys_name}.pt"
             self.net.load_state_dict(torch.load(checkpoint, map_location=self.device))

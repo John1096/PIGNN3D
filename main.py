@@ -1,4 +1,4 @@
-"""Train, evaluate, and export thermodynamics-informed graph predictions."""
+"""Train, evaluate, and export PIGNN3D graph predictions."""
 
 import argparse
 
