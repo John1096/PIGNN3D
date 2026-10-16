@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.vscode/
+.pytest_cache/
+outputs/
+vtkout/
+*.pt
+*.vtk
+*.gif
+*.xlsx
+*_log_*.txt
+data/database_*/
+data/hot_aisle/

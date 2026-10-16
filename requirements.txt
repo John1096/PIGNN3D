@@ -1,0 +1,10 @@
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+tqdm
+torch
+torch-geometric
+torch-scatter
+openpyxl
